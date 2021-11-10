@@ -13,6 +13,7 @@ function PlantPage() {
     let filterPlantsList = showPlants.filter(plant => {
       return plant.name.includes(e.target.value)
     })
+    //then add to setter function - setting state to the new filterPlantsList
     setFilterPlants(filterPlantsList)
   }
 function newPlant (addPlant) {
